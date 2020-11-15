@@ -15,6 +15,7 @@ import { AppComponent } from './app.component';
     CommonModule,
     PassengerDashboardModule
   ],
+  exports: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
