@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core'; 
+import {Component, OnInit, } from '@angular/core'; 
 import {Passenger} from '../../models/passenger.interface';
 
 @Component({
@@ -46,5 +46,11 @@ export class PassengerDashboardComponent implements OnInit {
         checkInDate: null,
         children: null
       }];
+    }
+    handleEdit(event) {
+      console.log(event);
+    }
+      handleRemove(event) {
+        console.log(event);
+      }
      }
-}
