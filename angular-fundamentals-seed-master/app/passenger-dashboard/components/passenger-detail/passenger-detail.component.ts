@@ -8,7 +8,7 @@ import { Passenger } from '../../models/passenger.interface';
     templateUrl: './passenger-detail.component.html'
 })
 
-export class PassengerDetailComponent implements OnChanges, OnInit{
+export class PassengerDetailComponent implements OnChanges, OnInit5g{
     @Input()
     detail: Passenger;
     @Output()
