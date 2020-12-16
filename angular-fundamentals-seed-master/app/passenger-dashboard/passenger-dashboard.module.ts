@@ -20,7 +20,8 @@ import {PassengerDashboardService} from './passenger-dashboard.service';
     HttpModule
   ], 
   exports: [
-      PassengerDashboardComponent
+      PassengerDashboardComponent,
+      
   ], 
   providers: [
     PassengerDashboardService
