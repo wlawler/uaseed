@@ -13,6 +13,7 @@ import {PassengerDashboardService} from './passenger-dashboard.service';
 @NgModule({
   declarations: [
     PassengerDashboardComponent,
+    PassengerViewerComponent,
     PassengerCountComponent, 
     PassengerDetailComponent
   ],
@@ -21,7 +22,8 @@ import {PassengerDashboardService} from './passenger-dashboard.service';
     HttpModule
   ], 
   exports: [
-      PassengerDashboardComponent,
+        //PassengerDashboardComponent
+     PassengerViewerComponent
       
   ], 
   providers: [
