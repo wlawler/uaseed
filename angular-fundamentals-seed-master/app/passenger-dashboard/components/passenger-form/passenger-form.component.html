@@ -12,7 +12,8 @@
     <input 
     type="number"
     name="id"
-    [ngModel]="detail?.id">
+    [ngModel]="detail?.id"
+   >
  </div>
  <div>
      <label>
@@ -20,7 +21,8 @@
          type="radio"
          [value]="true"
          name="checkedIn"
-         [ngModel]="detail?.checkedIn">
+         [ngModel]="detail?.checkedIn"
+         (ngModelChange)="toggleCheckIn($event )">
          Yes
      </label>
      <label>
@@ -28,7 +30,8 @@
         type="radio"
         [value]="false"
         name="checkedIn"
-        [ngModel]="detail?.checkedIn">
+        [ngModel]="detail?.checkedIn"
+        (ngModelChange)="toggleCheckIn($event )">
         No
     </label>
  </div>
