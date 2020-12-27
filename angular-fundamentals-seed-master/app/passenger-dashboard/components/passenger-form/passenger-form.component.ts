@@ -1,5 +1,5 @@
-import { Component} from '@angular/core'; 
-
+import { Component, Input} from '@angular/core'; 
+import { Passenger} from '../../models/passenger.interface'
 @Component({
     selector:'passenger-form', 
     styleUrls: ['passenger-form.component.scss'], 
@@ -7,5 +7,6 @@ import { Component} from '@angular/core';
 })
 
 export class PassengerFormComponent {
+    @Input()
     detail: Passenger; 
 }
