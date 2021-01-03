@@ -1,3 +1,6 @@
+
+
+
 <form #form="ngForm" novalidate>  
     {{detail | json}}
     <div>
@@ -13,18 +16,16 @@
       </div>
    </div>
    <div>
-    Passenger ID:  
+    Passenger ID: 
     <input 
     type="number"
     name="id"
     required
     #id="ngModel"
     [ngModel]="detail?.id">
-
     <div *ngIf="id.errors?.required && id.dirty" class="error">
-    Passenger Id is required
+    Passenger ID is required 
     </div>
-   
  </div>
  <div>
      <label>
@@ -32,7 +33,7 @@
          type="checkbox"
          name="checkedIn"
          
-         #id="ngModel"
+         name="ngModel"
          [ngModel]="detail?.checkedIn"
          (ngModelChange)="toggleCheckIn($event )">
      </label>
@@ -44,7 +45,7 @@
      type="number"
      name="checkedInDate"
      [ngModel]="detail?.checkedInDate">
-
+ </div>
 <div>
     Luggage: 
     <select
@@ -59,9 +60,9 @@
     </select>
 </div>
 
- </div>
+ <!--</div> -->
 
- <div>Valid: {{form.value | json}}</div>
+ <div> {{form.value | json}}</div>
  <div>Valid: {{form.valid| json}}</div>
  <div>InValid: {{form.invalid | json}}</div>
 </form>
