@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
   template: `
   <div>
-     Not Found
+     Not Found, <a routerLink="/"> go home </a>
    </div>
   `
 })
